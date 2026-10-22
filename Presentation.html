@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coca-Cola Tansi Beverage — GO AUDIT Presentation</title>
+<style>
+:root{--red:#F40009;--dark:#0F172A;--ink:#1E293B;--muted:#64748B;--bg:#F8FAFC;--card:#FFFFFF;--line:#E2E8F0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI",Inter,Roboto,Arial,sans-serif;background:#0F172A;color:#F8FAFC;line-height:1.6}
+.deck{max-width:1100px;margin:0 auto;padding:24px}
+.slide{background:linear-gradient(135deg,#0F172A,#1E293B);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:48px 56px;margin:0 0 40px;box-shadow:0 20px 60px rgba(0,0,0,.4);position:relative;overflow:hidden;min-height:620px;display:flex;flex-direction:column}
+.slide::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#F40009,#B80006)}
+.slide h1{font-size:34px;font-weight:800;color:#fff;margin-bottom:6px;letter-spacing:.3px}
+.slide h2{font-size:22px;font-weight:800;color:#F40009;margin:18px 0 8px}
+.slide h3{font-size:16px;font-weight:700;color:#CBD5E1;margin:12px 0 4px;text-transform:uppercase;letter-spacing:.6px}
+.slide p,.slide li{font-size:16px;color:#E2E8F0}
+.slide ul{padding-left:22px;margin:8px 0}
+.slide li{margin:6px 0}
+.slide .tag{display:inline-block;background:#F40009;color:#fff;border-radius:999px;padding:4px 12px;font-size:12px;font-weight:800;margin-bottom:14px}
+.slide .footer{margin-top:auto;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);font-size:12px;color:#94A3B8;display:flex;justify-content:space-between}
+.slide .logo{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.slide .disc{width:56px;height:56px;border-radius:50%;background:#F40009;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-style:italic;font-size:13px;border:2px solid #fff}
+.slide .co{font-size:18px;font-weight:800;color:#fff}
+.slide .sub{font-size:12px;color:#CBD5E1}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+th,td{border:1px solid rgba(255,255,255,.12);padding:10px 12px;text-align:left}
+th{background:#0F172A;color:#F40009;font-weight:800}
+tr:nth-child(even) td{background:rgba(255,255,255,.03)}
+.kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.kpi .k{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px;text-align:center}
+.kpi .k b{display:block;font-size:26px;color:#F40009}
+.kpi .k span{font-size:12px;color:#CBD5E1}
+.step{display:flex;gap:14px;margin:8px 0;align-items:flex-start}
+.step .n{width:34px;height:34px;border-radius:50%;background:#F40009;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;flex:0 0 34px}
+.step .t{flex:1}
+.step .t b{color:#fff}
+.badge{display:inline-block;background:rgba(244,0,9,.15);border:1px solid #F40009;color:#FCA5A5;border-radius:6px;padding:2px 8px;font-size:12px;font-weight:700;margin:2px}
+.hero{text-align:center;padding:40px 0}
+.hero h1{font-size:46px}
+.hero .tag{margin:14px auto}
+@media print{.slide{page-break-after:always;margin:0;border:none}}
+</style>
+</head>
+<body>
+<div class="deck">
+
+<div class="slide hero">
+  <div class="logo" style="justify-content:center"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Official Audit Hub</div></div></div>
+  <h1>GO AUDIT</h1>
+  <p style="font-size:20px;color:#CBD5E1">Internal Audit &amp; Quality Management Platform</p>
+  <span class="tag">v2.1.0 • Secure • Multi-role • Real-time</span>
+  <p style="margin-top:18px;color:#94A3B8">Live: https://audit-cocacola.vercel.app/login</p>
+  <div class="footer"><span>Prepared for client demonstration</span><span>© Coca-Cola Tansi Beverage</span></div>
+</div>
+
+<div class="slide">
+  <div class="logo"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Audit Platform</div></div></div>
+  <span class="tag">01 • The Problem</span>
+  <h1>Why a Digital Audit Platform?</h1>
+  <ul>
+    <li>Paper checklists are slow, error-prone and hard to track</li>
+    <li>No real-time visibility of audit progress across teams</li>
+    <li>Evidence (photos, documents, audio) scattered across devices</li>
+    <li>Role confusion — who approves, who edits, who reports</li>
+    <li>Reports arrive late, inconsistent format, hard to audit later</li>
+    <li>No analytics to detect recurring non-conformances</li>
+  </ul>
+  <p style="margin-top:14px"><b>Goal:</b> one platform covering the full audit lifecycle — planning to sign-off.</p>
+  <div class="footer"><span>GO AUDIT • Coca-Cola Tansi Beverage</span><span>2 / 15</span></div>
+</div>
+
+<div class="slide">
+  <div class="logo"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Audit Platform</div></div></div>
+  <span class="tag">02 • The Solution</span>
+  <h1>GO AUDIT — Single Branded Audit Hub</h1>
+  <ul>
+    <li>Coca-Cola Tansi Beverage branded experience end to end</li>
+    <li>Multi-role access: Admin, Manager, Supervisor, Auditor</li>
+    <li>Real-time progress tracking with collaborator allocation</li>
+    <li>Evidence capture — photo, document, audio, video</li>
+    <li>Executive-grade reports (on-screen + PDF + CSV + Print)</li>
+    <li>Analytics dashboard with KPIs, charts and filters</li>
+  </ul>
+  <div class="footer"><span>GO AUDIT • Coca-Cola Tansi Beverage</span><span>3 / 15</span></div>
+</div>
+
+<div class="slide">
+  <div class="logo"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Brand Identity</div></div></div>
+  <span class="tag">03 • Brand Identity</span>
+  <h1>Coca-Cola Tansi Beverage</h1>
+  <ul>
+    <li>Signature Coca-Cola Red <span class="badge">#F40009</span> + deep charcoal <span class="badge">#0F172A</span></li>
+    <li>Official Coca-Cola script logo in navbar, login and report header</li>
+    <li>Crisp white cards, soft shadows, glassmorphic accents</li>
+    <li>Consistent footer: copyright, version v2.1.0, sync status</li>
+    <li>CONFIDENTIAL watermark on every generated report</li>
+  </ul>
+  <div class="footer"><span>GO AUDIT • Coca-Cola Tansi Beverage</span><span>4 / 15</span></div>
+</div>
+
+<div class="slide">
+  <div class="logo"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Security</div></div></div>
+  <span class="tag">04 • Security &amp; RBAC</span>
+  <h1>Who Can Do What</h1>
+  <table>
+    <tr><th>Role</th><th>Audits</th><th>Approvals</th><th>Admin</th><th>Library</th><th>Reports</th></tr>
+    <tr><td>Admin</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Manager</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>✓</td></tr>
+    <tr><td>Supervisor</td><td>✓</td><td>✓</td><td>—</td><td>—</td><td>✓</td></tr>
+    <tr><td>Auditor</td><td>✓ own/assigned</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr>
+  </table>
+  <ul>
+    <li>JWT authentication, 7-day expiring tokens</li>
+    <li>Passwords hashed with bcrypt (72-byte guard)</li>
+    <li>Invalid IDs rejected safely (400, no 500 crashes)</li>
+    <li>Disabled / rejected accounts cannot log in</li>
+  </ul>
+  <div class="footer"><span>GO AUDIT • Coca-Cola Tansi Beverage</span><span>5 / 15</span></div>
+</div>
+
+<div class="slide">
+  <div class="logo"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Signup</div></div></div>
+  <span class="tag">05 • Secure Auditor Signup</span>
+  <h1>Invite-Code Approval Flow</h1>
+  <h3>Three mandatory credentials</h3>
+  <ul>
+    <li>Pre-allocated Official Email ID</li>
+    <li>Password (strength meter + confirmation match)</li>
+    <li>Special Registration / Invite Code</li>
+  </ul>
+  <h3>Account state machine</h3>
+  <div class="step"><div class="n">1</div><div class="t"><b>Signup</b> → status becomes <span class="badge">PENDING_APPROVAL</span> (holding screen, no dashboard access)</div></div>
+  <div class="step"><div class="n">2</div><div class="t"><b>Admin / Manager / Supervisor</b> see a Pending Approvals queue, verify email + code</div></div>
+  <div class="step"><div class="n">3</div><div class="t"><b>Approve</b> or <b>Reject</b> → on approval, immediate login + dashboard access</div></div>
+  <p style="margin-top:10px">Invite codes are generated/allocated by approvers and bindable to a specific email.</p>
+  <div class="footer"><span>GO AUDIT • Coca-Cola Tansi Beverage</span><span>6 / 15</span></div>
+</div>
+
+<div class="slide">
+  <div class="logo"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Progress</div></div></div>
+  <span class="tag">06 • Real-Time Progress &amp; Collaboration</span>
+  <h1>Live Progress on Every Audit</h1>
+  <ul>
+    <li>Prominent progress bar at the top of the Audit Workspace</li>
+    <li>Exact completion % (0–100), completed vs. total checklist items</li>
+    <li>Stage badge: <span class="badge">Initialized</span> → <span class="badge">In Progress</span> → <span class="badge">Under Review</span> → <span class="badge">Completed</span></li>
+    <li>Last-updated timestamp</li>
+    <li>Collaborator allocation — multiple profiles view and contribute</li>
+    <li>Each contribution recalculates the shared progress bar</li>
+  </ul>
+  <div class="footer"><span>GO AUDIT • Coca-Cola Tansi Beverage</span><span>7 / 15</span></div>
+</div>
+
+<div class="slide">
+  <div class="logo"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Workflow</div></div></div>
+  <span class="tag">07 • Audit Workflow</span>
+  <h1>Step by Step</h1>
+  <div class="step"><div class="n">1</div><div class="t"><b>New Audit</b> — pick standard (ISO 45001 / 9001 / 14001 / FSSC 22000), fill plant, auditor, auditee, scope</div></div>
+  <div class="step"><div class="n">2</div><div class="t"><b>Workspace</b> — answer clause-by-clause questions</div></div>
+  <div class="step"><div class="n">3</div><div class="t"><b>Evidence</b> — attach photos, documents, audio, video</div></div>
+  <div class="step"><div class="n">4</div><div class="t"><b>Save / Complete</b> — 100% completion required to complete</div></div>
+  <div class="step"><div class="n">5</div><div class="t"><b>Report</b> — View Report, CAPA Report</div></div>
+  <div class="step"><div class="n">6</div><div class="t"><b>Export</b> — Full PDF, Findings-only PDF, Text report, CAPA CSV</div></div>
+  <div class="footer"><span>GO AUDIT • Coca-Cola Tansi Beverage</span><span>8 / 15</span></div>
+</div>
+
+<div class="slide">
+  <div class="logo"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Evidence &amp; CAPA</div></div></div>
+  <span class="tag">08 • Evidence &amp; CAPA</span>
+  <h1>Evidence Capture &amp; Corrective Actions</h1>
+  <h3>Evidence</h3>
+  <ul>
+    <li>Camera photo, gallery photo, document picker, audio recording, video</li>
+    <li>Base64 storage with metadata (filename, type, timestamp)</li>
+    <li>Openable attachments in the report view (fullscreen photo viewer)</li>
+  </ul>
+  <h3>CAPA (Corrective Action Plan)</h3>
+  <ul>
+    <li>Online CAPA preparation by auditee / auditor</li>
+    <li>Correction, root cause, corrective action, responsible person, target date, status</li>
+    <li>Closure evidence photos</li>
+    <li>Presentable CAPA report view + PDF download</li>
+  </ul>
+  <div class="footer"><span>GO AUDIT • Coca-Cola Tansi Beverage</span><span>9 / 15</span></div>
+</div>
+
+<div class="slide">
+  <div class="logo"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Reports</div></div></div>
+  <span class="tag">09 • Executive-Grade Reports</span>
+  <h1>On-Screen + Exported (PDF / CSV / Print)</h1>
+  <ul>
+    <li>Header: Coca-Cola logo + "Coca-Cola Tansi Beverage — Official Audit Report"</li>
+    <li>Audit metadata card: Audit ID, timestamp, allocated profiles, approving supervisor/manager, overall compliance score</li>
+    <li>Visual score gauge (green / amber / red by compliance)</li>
+    <li>Section-wise compliance tables (Compliant / Minor NC / Major NC)</li>
+    <li>Contributor log + digital sign-off blocks</li>
+    <li>CONFIDENTIAL watermark</li>
+  </ul>
+  <div class="footer"><span>GO AUDIT • Coca-Cola Tansi Beverage</span><span>10 / 15</span></div>
+</div>
+
+<div class="slide">
+  <div class="logo"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Analytics</div></div></div>
+  <span class="tag">10 • Analytics Dashboard</span>
+  <h1>KPIs, Charts &amp; Filters</h1>
+  <div class="kpi">
+    <div class="k"><b>Total</b><span>Audits Conducted</span></div>
+    <div class="k"><b>Completed</b><span>Audits</span></div>
+    <div class="k"><b>Active</b><span>In Progress</span></div>
+    <div class="k"><b>Pending</b><span>Approvals</span></div>
+    <div class="k"><b>Avg %</b><span>Compliance Rate</span></div>
+    <div class="k"><b>8-week</b><span>Volume Trend</span></div>
+  </div>
+  <ul>
+    <li>Bar graph: 8-week audit volume trend</li>
+    <li>Donut chart: audits by status (completed / in-progress / draft / flagged)</li>
+    <li>Category distribution by standard</li>
+    <li>Filters: date range, auditor, status → live chart update</li>
+    <li>One-click export: CSV summary</li>
+  </ul>
+  <div class="footer"><span>GO AUDIT • Coca-Cola Tansi Beverage</span><span>11 / 15</span></div>
+</div>
+
+<div class="slide">
+  <div class="logo"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Architecture</div></div></div>
+  <span class="tag">11 • Technical Architecture</span>
+  <h1>Stack &amp; Scale</h1>
+  <table>
+    <tr><th>Layer</th><th>Technology</th></tr>
+    <tr><td>Frontend</td><td>Expo Router + React Native (Web)</td></tr>
+    <tr><td>Backend</td><td>FastAPI (Python)</td></tr>
+    <tr><td>Database</td><td>MongoDB (mongomock fallback for preview)</td></tr>
+    <tr><td>Auth</td><td>JWT + bcrypt</td></tr>
+    <tr><td>Reports</td><td>expo-print + browser print (multi-page)</td></tr>
+    <tr><td>Hosting</td><td>Vercel (frontend + serverless API)</td></tr>
+  </table>
+  <p style="margin-top:10px">40+ REST endpoints covering auth, users, questionnaires, audits, CAPA, analytics, reports.</p>
+  <div class="footer"><span>GO AUDIT • Coca-Cola Tansi Beverage</span><span>12 / 15</span></div>
+</div>
+
+<div class="slide">
+  <div class="logo"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Live Demo</div></div></div>
+  <span class="tag">12 • Live Demo</span>
+  <h1>Try It Yourself</h1>
+  <p><b>URL:</b> https://audit-cocacola.vercel.app/login</p>
+  <p><b>Admin login:</b> <span class="badge">SRD</span> / <span class="badge">7550</span></p>
+  <p style="margin-top:10px"><b>Demo walkthrough (5 minutes)</b></p>
+  <div class="step"><div class="n">1</div><div class="t">Login as Admin (SRD)</div></div>
+  <div class="step"><div class="n">2</div><div class="t">Dashboard → Audits → New Audit</div></div>
+  <div class="step"><div class="n">3</div><div class="t">Answer 2–3 questions, attach a photo</div></div>
+  <div class="step"><div class="n">4</div><div class="t">Save → View Report → download PDF</div></div>
+  <div class="step"><div class="n">5</div><div class="t">Analytics → filter → export CSV</div></div>
+  <div class="step"><div class="n">6</div><div class="t">Approvals tab → generate invite code → register new auditor → approve</div></div>
+  <div class="footer"><span>GO AUDIT • Coca-Cola Tansi Beverage</span><span>13 / 15</span></div>
+</div>
+
+<div class="slide">
+  <div class="logo"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Roadmap</div></div></div>
+  <span class="tag">13 • Roadmap &amp; Next Steps</span>
+  <h1>Delivered (v2.1.0) &amp; Next</h1>
+  <h3>Delivered in this release</h3>
+  <ul>
+    <li>Multi-role RBAC with invite-code signup + approval</li>
+    <li>Real-time progress + collaboration</li>
+    <li>Executive reports + CAPA</li>
+    <li>Analytics dashboard</li>
+  </ul>
+  <h3>Next</h3>
+  <ul>
+    <li>Persistent MongoDB (Atlas) for production data</li>
+    <li>Mobile builds (iOS/Android via Expo)</li>
+    <li>CAPA status dashboard on audit cards</li>
+    <li>Audit plan module &amp; startup performance</li>
+    <li>Migrate deprecated expo-av → expo-audio</li>
+  </ul>
+  <div class="footer"><span>GO AUDIT • Coca-Cola Tansi Beverage</span><span>14 / 15</span></div>
+</div>
+
+<div class="slide hero">
+  <div class="logo" style="justify-content:center"><div class="disc">Coca-Cola</div><div><div class="co">Coca-Cola Tansi Beverage</div><div class="sub">Official Audit Hub</div></div></div>
+  <h1>Thank You</h1>
+  <p style="font-size:20px;color:#CBD5E1">Questions?</p>
+  <p style="margin-top:14px;color:#94A3B8">Contact: Saila Ruidas • Emergent Lab</p>
+  <div class="footer"><span>GO AUDIT • Coca-Cola Tansi Beverage</span><span>15 / 15</span></div>
+</div>
+
+</div>
+</body>
+</html>
